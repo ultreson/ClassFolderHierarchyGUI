@@ -1,0 +1,9 @@
+C:\Users\1533564\Downloads\ClassFolderHierarchyGUI\session\bin\Debug\session.exe.config
+C:\Users\1533564\Downloads\ClassFolderHierarchyGUI\session\bin\Debug\session.exe
+C:\Users\1533564\Downloads\ClassFolderHierarchyGUI\session\bin\Debug\session.pdb
+C:\Users\1533564\Downloads\ClassFolderHierarchyGUI\session\obj\Debug\session.csprojResolveAssemblyReference.cache
+C:\Users\1533564\Downloads\ClassFolderHierarchyGUI\session\obj\Debug\session.FrmGraphique.resources
+C:\Users\1533564\Downloads\ClassFolderHierarchyGUI\session\obj\Debug\session.Properties.Resources.resources
+C:\Users\1533564\Downloads\ClassFolderHierarchyGUI\session\obj\Debug\session.csproj.GenerateResource.Cache
+C:\Users\1533564\Downloads\ClassFolderHierarchyGUI\session\obj\Debug\session.exe
+C:\Users\1533564\Downloads\ClassFolderHierarchyGUI\session\obj\Debug\session.pdb
