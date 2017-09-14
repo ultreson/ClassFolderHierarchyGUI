@@ -18,7 +18,7 @@ namespace session
         #region variables et propriétés
 
         private string m_nomCours;
-        private int m_NbJours;
+        private int m_nbJours;
         private bool[] m_tabBoolJours;
 
         public string Nom
@@ -33,7 +33,7 @@ namespace session
         {
             get
             {
-                return m_NbJours;
+                return m_nbJours;
             }
         }
 
@@ -41,7 +41,7 @@ namespace session
         {
             get
             {
-                string[] tabNomJours = new string[m_NbJours];
+                string[] tabNomJours = new string[NombreDeJours];
                 int count = 0;
                 for (int jour = 0; jour < 5; jour++)
                 {
@@ -59,20 +59,25 @@ namespace session
 
         #region constructeur
 
-        public Cours(string pNom, int pNbJours, bool[] pTabDeJours)
+        public Cours(string pNom, bool[] pTabDeJours)
         {
             m_nomCours = pNom;
-            m_NbJours = pNbJours;
             m_tabBoolJours = pTabDeJours;
+            CalculNombreJours();
         }
 
         #endregion
 
-        #region methodes
+        #region
 
-        public bool PlusieursJours()
+        private void CalculNombreJours()
         {
-            return m_NbJours != 1;
+            m_nbJours = 0;
+            foreach (bool item in m_tabBoolJours)
+            {
+                if (item)
+                    m_nbJours++;
+            }
         }
 
         #endregion

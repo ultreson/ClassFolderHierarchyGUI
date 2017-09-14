@@ -13,7 +13,6 @@ namespace session
     public partial class FrmGraphique : Form
     {
         private Session m_session;
-        private int count;
 
         public FrmGraphique()
         {
@@ -31,12 +30,11 @@ namespace session
                 return;
             }
             m_session = new Session(txtSession.Text);
-            txtSession.Enabled = false;
+            txtSession.Enabled = 
             btnSession.Enabled = false;
             grpSessionActive.Enabled = true;
             grpSessionActive.Text = m_session.Nom;
             txtNomCours.Focus();
-            count = 0;
         }
 
         private void btnAjouter_Click(object sender, EventArgs e)
@@ -53,27 +51,25 @@ namespace session
                 return;
             }
             bool[] tabJours = new bool[5];
-            int NbJours = clbJours.CheckedItems.Count;
             for (int index = 0; index < 5; index++)
             {
                 tabJours[index] = clbJours.GetItemChecked(index);
                 clbJours.SetItemChecked(index, false);
             }
-            m_session.Liste.Add(new Cours(txtNomCours.Text, NbJours, tabJours));
-            ListViewItem item = new ListViewItem(m_session.Liste.CoursAt(count).Nom);
+            m_session.Liste.Add(new Cours(txtNomCours.Text, tabJours));
+            ListViewItem item = new ListViewItem(m_session.Liste.LastOrDefault().Nom);
             string jours = null;
-            for (int jour = 0; jour < m_session.Liste.CoursAt(count).NombreDeJours; jour++)
+            for (int jour = 0; jour < m_session.Liste.LastOrDefault().NombreDeJours; jour++)
             {
-                jours += m_session.Liste.CoursAt(count).TabNomsJours[jour].Substring(0,3);
-                if (jour < m_session.Liste.CoursAt(count).NombreDeJours - 1)
+                jours += m_session.Liste.LastOrDefault().TabNomsJours[jour].Substring(0,3);
+                if (jour < m_session.Liste.LastOrDefault().NombreDeJours - 1)
                 {
                     jours += ", ";
                 }
             }
             item.SubItems.Add(jours);
             lsvSession.Items.Add(item);
-            count++;
-            txtCount.Text = count.ToString();
+            txtCount.Text = m_session.Liste.Count.ToString();
             txtNomCours.Text = null;
             txtNomCours.Focus();
         }
@@ -99,7 +95,7 @@ namespace session
             if (reponse == DialogResult.Yes)
             {
                 grpSessionActive.Enabled = false;
-                txtSession.Enabled = true;
+                txtSession.Enabled =
                 btnSession.Enabled = true;
                 grpSessionActive.Text = "Session Active";
                 lsvSession.Items.Clear();
@@ -147,9 +143,8 @@ namespace session
                 {
                     m_session.Liste.RemoveAt(lsvSession.SelectedIndices[i]);
                     lsvSession.Items.RemoveAt(lsvSession.SelectedIndices[i]);
-                    count--;
                 }
-                txtCount.Text = count.ToString();
+                txtCount.Text = m_session.Liste.Count.ToString();
                 txtNomCours.Text = null;
                 txtNomCours.Focus();
             }

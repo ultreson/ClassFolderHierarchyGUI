@@ -9,7 +9,7 @@ namespace session
 {
     public class Session
     {
-        private ListeDeCours m_listeDeCours = new ListeDeCours();
+        private List<Cours> m_listeDeCours = new List<Cours>();
         private string m_Nom;
 
         public string Nom
@@ -20,7 +20,7 @@ namespace session
             }
         }
 
-        public ListeDeCours Liste
+        public List<Cours> Liste
         {
             get
             {
@@ -49,7 +49,7 @@ namespace session
                     path = rappel.ToString();
                     Directory.CreateDirectory(path + "\\semaine " + semaine.ToString("00"));
                     path = path + "\\semaine " + semaine.ToString("00");
-                    if (cours.PlusieursJours())
+                    if (cours.NombreDeJours > 1)
                     {
                         for (int jour = 0; jour < cours.NombreDeJours; jour++)
                         {
