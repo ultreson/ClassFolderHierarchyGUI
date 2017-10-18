@@ -79,12 +79,12 @@ namespace ClassFolderHierarchyGUI
             var response = MessageBox.Show("Avez-vous terminé?", "Avertissement", MessageBoxButtons.YesNo);
             if (response == DialogResult.Yes)
             {
-                FolderBrowserDialog Dialogue = new FolderBrowserDialog();
-                var result = Dialogue.ShowDialog();
+                FolderBrowserDialog dialog = new FolderBrowserDialog();
+                var result = dialog.ShowDialog();
                 if (result == DialogResult.OK)
                 {
-                    m_semester.Create((Dialogue.SelectedPath));
-                    MessageBox.Show("Dossiers Créés dans " + Dialogue.SelectedPath);
+                    m_semester.Create((dialog.SelectedPath));
+                    MessageBox.Show("Dossiers Créés dans " + dialog.SelectedPath);
                 }
             }
         }
