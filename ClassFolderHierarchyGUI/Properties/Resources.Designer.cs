@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace session.Properties
+namespace ClassFolderHierarchyGUI.Properties
 {
 
 

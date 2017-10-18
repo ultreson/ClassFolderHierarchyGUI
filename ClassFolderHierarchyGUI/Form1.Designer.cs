@@ -1,4 +1,4 @@
-﻿namespace session
+﻿namespace ClassFolderHierarchyGUI
 {
     partial class FrmGraphique
     {
