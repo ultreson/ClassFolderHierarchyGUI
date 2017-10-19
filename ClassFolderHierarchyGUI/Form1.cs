@@ -1,8 +1,10 @@
-﻿using System;
+﻿using ClassFolderHierarchyGUI.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,9 +15,12 @@ namespace ClassFolderHierarchyGUI
     public partial class FrmGraphique : Form
     {
         private Semester m_semester;
-
+        private CultureInfo EnglishCulture = new CultureInfo("en-US");
+        private CultureInfo FrenchCulture = new CultureInfo("fr-FR");
         public FrmGraphique()
         {
+            //CultureInfo.DefaultThreadCurrentUICulture = EnglishCulture;
+            //CultureInfo.DefaultThreadCurrentUICulture = FrenchCulture;
             InitializeComponent();
             grpSessionActive.Enabled = false;
             txtSession.Enabled = true;
@@ -25,7 +30,7 @@ namespace ClassFolderHierarchyGUI
         {
             if (txtSession.Text == "")
             {
-                MessageBox.Show("Veuillez entrer un nom pour la session.");
+                MessageBox.Show(Resources.messageNoSemesterName);
                 txtSession.Focus();
                 return;
             }
@@ -41,13 +46,13 @@ namespace ClassFolderHierarchyGUI
         {
             if (txtNomCours.Text == "")
             {
-                MessageBox.Show("Veuillez entrer un nom");
+                MessageBox.Show(Resources.messageNoCourseName);
                 txtNomCours.Focus();
                 return;
             }
             if (clbJours.CheckedItems.Count == 0)
             {
-                MessageBox.Show("Veuillez choisir les jours du cours");
+                MessageBox.Show(Resources.messageNoDaysSelected);
                 return;
             }
             bool[] tabDays = new bool[5];
@@ -76,7 +81,7 @@ namespace ClassFolderHierarchyGUI
 
         private void btnCreer_Click(object sender, EventArgs e)
         {
-            var response = MessageBox.Show("Avez-vous terminé?", "Avertissement", MessageBoxButtons.YesNo);
+            var response = MessageBox.Show(Resources.ConfirmDone, Resources.Warning, MessageBoxButtons.YesNo);
             if (response == DialogResult.Yes)
             {
                 FolderBrowserDialog dialog = new FolderBrowserDialog();
@@ -84,20 +89,20 @@ namespace ClassFolderHierarchyGUI
                 if (result == DialogResult.OK)
                 {
                     m_semester.Create((dialog.SelectedPath));
-                    MessageBox.Show("Dossiers Créés dans " + dialog.SelectedPath);
+                    MessageBox.Show(Resources.FoldersCreatedIn + dialog.SelectedPath);
                 }
             }
         }
 
         private void btnVider_Click(object sender, EventArgs e)
         {
-            var response = MessageBox.Show("La session sera supprimée. \n Voulez-vous continuer?", "Avertissement", MessageBoxButtons.YesNo);
+            var response = MessageBox.Show(Resources.messageConfirmDelete, Resources.Warning, MessageBoxButtons.YesNo);
             if (response == DialogResult.Yes)
             {
                 grpSessionActive.Enabled = false;
                 txtSession.Enabled =
                 btnSession.Enabled = true;
-                grpSessionActive.Text = "Session Active";
+                grpSessionActive.Text = Form1.grpSessionActive_Text;
                 lsvSession.Items.Clear();
                 clbJours.SelectedIndex = -1;
                 for (int item = 0; item < 5; item++)

@@ -117,11 +117,62 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ClassFolderHierarchyGUI</value>
+  </data>
+  <data name="btnAjouter.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="btnCreer.Text" xml:space="preserve">
+    <value>Créer</value>
+  </data>
+  <data name="btnEffacer.Text" xml:space="preserve">
+    <value>Effacer</value>
+  </data>
+  <data name="btnSession.Text" xml:space="preserve">
+    <value>Commencer session</value>
+  </data>
+  <data name="btnVider.Text" xml:space="preserve">
+    <value>Vider</value>
+  </data>
+  <data name="clbJours.Items" xml:space="preserve">
+    <value>Lundi</value>
+  </data>
+  <data name="clbJours.Items1" xml:space="preserve">
+    <value>Mardi</value>
+  </data>
+  <data name="clbJours.Items2" xml:space="preserve">
+    <value>Mercredi</value>
+  </data>
+  <data name="clbJours.Items3" xml:space="preserve">
+    <value>Jeudi</value>
+  </data>
+  <data name="clbJours.Items4" xml:space="preserve">
+    <value>Vendredi</value>
+  </data>
   <data name="ConfirmDone" xml:space="preserve">
     <value>Avez-vous terminé?</value>
   </data>
+  <data name="course.Text" xml:space="preserve">
+    <value>cours</value>
+  </data>
+  <data name="days.Text" xml:space="preserve">
+    <value>jours</value>
+  </data>
   <data name="FoldersCreatedIn" xml:space="preserve">
     <value>Dossiers Créés dans </value>
+  </data>
+  <data name="grpSessionActive.Text" xml:space="preserve">
+    <value>Session active</value>
+  </data>
+  <data name="lblJoursCours.Text" xml:space="preserve">
+    <value>Jours du cours</value>
+  </data>
+  <data name="lblNom.Text" xml:space="preserve">
+    <value>Nom du cours:</value>
+  </data>
+  <data name="lblSession.Text" xml:space="preserve">
+    <value>Nom de la session:</value>
   </data>
   <data name="messageConfirmDelete" xml:space="preserve">
     <value>La session sera supprimée. \n Voulez-vous continuer?</value>
