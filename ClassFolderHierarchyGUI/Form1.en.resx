@@ -117,25 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ClassFolderHierarchyGUI</value>
+  </data>
+  <data name="btnAjouter.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnCreer.Text" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="btnEffacer.Text" xml:space="preserve">
+    <value>Erase</value>
+  </data>
+  <data name="btnSession.Text" xml:space="preserve">
+    <value>Start Semester</value>
+  </data>
+  <data name="btnVider.Text" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="clbJours.Items" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="clbJours.Items1" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="clbJours.Items2" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="clbJours.Items3" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="clbJours.Items4" xml:space="preserve">
+    <value>Friday</value>
+  </data>
   <data name="ConfirmDone" xml:space="preserve">
-    <value>Avez-vous terminé?</value>
+    <value>Are you done?</value>
+  </data>
+  <data name="course.Text" xml:space="preserve">
+    <value>course</value>
+  </data>
+  <data name="days.Text" xml:space="preserve">
+    <value>days</value>
   </data>
   <data name="FoldersCreatedIn" xml:space="preserve">
-    <value>Dossiers Créés dans </value>
+    <value>Folders created in </value>
   </data>
-  <data name="messageConfirmDelete" xml:space="preserve">
-    <value>La session sera supprimée. \n Voulez-vous continuer?</value>
+  <data name="grpSessionActive.Text" xml:space="preserve">
+    <value>Active semester</value>
   </data>
-  <data name="messageNoCourseName" xml:space="preserve">
-    <value>Veuillez entrer un nom.</value>
+  <data name="lblJoursCours.Text" xml:space="preserve">
+    <value>Days of course</value>
   </data>
-  <data name="messageNoDaysSelected" xml:space="preserve">
-    <value>Veuillez choisir les jours du cours.</value>
+  <data name="lblNom.Text" xml:space="preserve">
+    <value>Course name:</value>
   </data>
-  <data name="messageNoSemesterName" xml:space="preserve">
-    <value>Veuillez entrer un nom pour la session.</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Avertissement</value>
+  <data name="lblSession.Text" xml:space="preserve">
+    <value>Semester name:</value>
   </data>
 </root>
