@@ -124,7 +124,8 @@
     <value>Dossiers Créés dans </value>
   </data>
   <data name="messageConfirmDelete" xml:space="preserve">
-    <value>La session sera supprimée. \n Voulez-vous continuer?</value>
+    <value>La session sera supprimée.
+Voulez-vous continuer?</value>
   </data>
   <data name="messageNoCourseName" xml:space="preserve">
     <value>Veuillez entrer un nom.</value>

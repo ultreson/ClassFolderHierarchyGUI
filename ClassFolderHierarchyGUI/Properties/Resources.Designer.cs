@@ -79,7 +79,8 @@ namespace ClassFolderHierarchyGUI.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à La session sera supprimée. \n Voulez-vous continuer?.
+        ///   Recherche une chaîne localisée semblable à La session sera supprimée.
+        ///Voulez-vous continuer?.
         /// </summary>
         public static string messageConfirmDelete {
             get {

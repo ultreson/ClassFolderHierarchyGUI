@@ -124,7 +124,8 @@
     <value>Folders created in </value>
   </data>
   <data name="messageConfirmDelete" xml:space="preserve">
-    <value>The semester will be deleted. \n Do you want to proceed?</value>
+    <value>The semester will be deleted. 
+Do you want to proceed?</value>
   </data>
   <data name="messageNoCourseName" xml:space="preserve">
     <value>Please enter a name.</value>
