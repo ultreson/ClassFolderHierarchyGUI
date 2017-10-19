@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace session
+namespace ClassFolderHierarchyGUI
 {
     public partial class FrmGraphique : Form
     {
-        private Session m_session;
+        private Semester m_semester;
 
         public FrmGraphique()
         {
@@ -29,11 +29,11 @@ namespace session
                 txtSession.Focus();
                 return;
             }
-            m_session = new Session(txtSession.Text);
+            m_semester = new Semester(txtSession.Text);
             txtSession.Enabled = 
             btnSession.Enabled = false;
             grpSessionActive.Enabled = true;
-            grpSessionActive.Text = m_session.Nom;
+            grpSessionActive.Text = m_semester.Name;
             txtNomCours.Focus();
         }
 
@@ -50,40 +50,40 @@ namespace session
                 MessageBox.Show("Veuillez choisir les jours du cours");
                 return;
             }
-            bool[] tabJours = new bool[5];
+            bool[] tabDays = new bool[5];
             for (int index = 0; index < 5; index++)
             {
-                tabJours[index] = clbJours.GetItemChecked(index);
+                tabDays[index] = clbJours.GetItemChecked(index);
                 clbJours.SetItemChecked(index, false);
             }
-            m_session.Liste.Add(new Cours(txtNomCours.Text, tabJours));
-            ListViewItem item = new ListViewItem(m_session.Liste.LastOrDefault().Nom);
-            string jours = null;
-            for (int jour = 0; jour < m_session.Liste.LastOrDefault().NombreDeJours; jour++)
+            m_semester.List.Add(new Course(txtNomCours.Text, tabDays));
+            ListViewItem item = new ListViewItem(m_semester.List.LastOrDefault().Name);
+            string days = null;
+            for (int day = 0; day < m_semester.List.LastOrDefault().NumberOfDays; day++)
             {
-                jours += m_session.Liste.LastOrDefault().TabNomsJours[jour].Substring(0,3);
-                if (jour < m_session.Liste.LastOrDefault().NombreDeJours - 1)
+                days += m_semester.List.LastOrDefault().TabDayNames[day].Substring(0,3);
+                if (day < m_semester.List.LastOrDefault().NumberOfDays - 1)
                 {
-                    jours += ", ";
+                    days += ", ";
                 }
             }
-            item.SubItems.Add(jours);
+            item.SubItems.Add(days);
             lsvSession.Items.Add(item);
-            txtCount.Text = m_session.Liste.Count.ToString();
+            txtCount.Text = m_semester.List.Count.ToString();
             txtNomCours.Text = null;
             txtNomCours.Focus();
         }
 
         private void btnCreer_Click(object sender, EventArgs e)
         {
-            var reponse = MessageBox.Show("Avez-vous terminé?", "Avertissement", MessageBoxButtons.YesNo);
-            if (reponse == DialogResult.Yes)
+            var response = MessageBox.Show("Avez-vous terminé?", "Avertissement", MessageBoxButtons.YesNo);
+            if (response == DialogResult.Yes)
             {
                 FolderBrowserDialog Dialogue = new FolderBrowserDialog();
                 var result = Dialogue.ShowDialog();
                 if (result == DialogResult.OK)
                 {
-                    m_session.Creer((Dialogue.SelectedPath));
+                    m_semester.Create((Dialogue.SelectedPath));
                     MessageBox.Show("Dossiers Créés dans " + Dialogue.SelectedPath);
                 }
             }
@@ -91,8 +91,8 @@ namespace session
 
         private void btnVider_Click(object sender, EventArgs e)
         {
-            var reponse = MessageBox.Show("La session sera supprimée. \n Voulez-vous continuer?", "Avertissement", MessageBoxButtons.YesNo);
-            if (reponse == DialogResult.Yes)
+            var response = MessageBox.Show("La session sera supprimée. \n Voulez-vous continuer?", "Avertissement", MessageBoxButtons.YesNo);
+            if (response == DialogResult.Yes)
             {
                 grpSessionActive.Enabled = false;
                 txtSession.Enabled =
@@ -141,10 +141,10 @@ namespace session
             {
                 for (int i = 0; i < lsvSession.SelectedItems.Count; i++)
                 {
-                    m_session.Liste.RemoveAt(lsvSession.SelectedIndices[i]);
+                    m_semester.List.RemoveAt(lsvSession.SelectedIndices[i]);
                     lsvSession.Items.RemoveAt(lsvSession.SelectedIndices[i]);
                 }
-                txtCount.Text = m_session.Liste.Count.ToString();
+                txtCount.Text = m_semester.List.Count.ToString();
                 txtNomCours.Text = null;
                 txtNomCours.Focus();
             }

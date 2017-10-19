@@ -5,55 +5,55 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace session
+namespace ClassFolderHierarchyGUI
 {
-    public class Session
+    public class Semester
     {
-        private List<Cours> m_listeDeCours = new List<Cours>();
-        private string m_Nom;
+        private List<Course> m_courseList = new List<Course>();
+        private string m_name;
 
-        public string Nom
+        public string Name
         {
             get
             {
-                return m_Nom;
+                return m_name;
             }
         }
 
-        public List<Cours> Liste
+        public List<Course> List
         {
             get
             {
-                return m_listeDeCours;
+                return m_courseList;
             }
         }
 
-        public Session(string pNom)
+        public Semester(string pName)
         {
-            m_Nom = pNom;
+            m_name = pName;
         }
 
-        public void Creer(string path)
+        public void Create(string path)
         {
-            Directory.CreateDirectory(path + "\\" + m_Nom);
-            path = path + "\\" + m_Nom;
-            StringBuilder NomCours = new StringBuilder(path);
-            foreach (Cours cours in m_listeDeCours)
+            Directory.CreateDirectory(path + "\\" + m_name);
+            path = path + "\\" + m_name;
+            StringBuilder CourseName = new StringBuilder(path);
+            foreach (Course course in m_courseList)
             {
-                path = NomCours.ToString();
-                Directory.CreateDirectory(path + "\\" + cours.Nom);
-                path = path + "\\" + cours.Nom;
-                StringBuilder rappel = new StringBuilder(path);
-                for (int semaine = 1; semaine < 16; semaine++)
+                path = CourseName.ToString();
+                Directory.CreateDirectory(path + "\\" + course.Name);
+                path = path + "\\" + course.Name;
+                StringBuilder pathBuilder = new StringBuilder(path);
+                for (int week = 1; week < 16; week++)
                 {
-                    path = rappel.ToString();
-                    Directory.CreateDirectory(path + "\\semaine " + semaine.ToString("00"));
-                    path = path + "\\semaine " + semaine.ToString("00");
-                    if (cours.NombreDeJours > 1)
+                    path = pathBuilder.ToString();
+                    Directory.CreateDirectory(path + "\\semaine " + week.ToString("00"));
+                    path = path + "\\semaine " + week.ToString("00");
+                    if (course.NumberOfDays > 1)
                     {
-                        for (int jour = 0; jour < cours.NombreDeJours; jour++)
+                        for (int day = 0; day < course.NumberOfDays; day++)
                         {
-                            Directory.CreateDirectory(path + "\\" + cours.TabNomsJours[jour]);
+                            Directory.CreateDirectory(path + "\\" + course.TabDayNames[day]);
                         }
                     }
                 }

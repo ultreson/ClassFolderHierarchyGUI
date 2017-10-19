@@ -5,81 +5,66 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace session
+namespace ClassFolderHierarchyGUI
 {
-    public class Cours
+    public class Course
     {
-        #region Constantes
 
-        string[] m_tabListeDeJours = new string[] {"lundi", "mardi", "mercredi","jeudi", "vendredi"};
+        private string[] m_tabDayNames = new string[] {"lundi", "mardi", "mercredi","jeudi", "vendredi"};
+        private string m_name;
+        private int m_nbDays;
+        private bool[] m_tabBoolDays;
 
-        #endregion
-
-        #region variables et propriétés
-
-        private string m_nomCours;
-        private int m_nbJours;
-        private bool[] m_tabBoolJours;
-
-        public string Nom
+        public string Name
         {
             get
             {
-                return m_nomCours;
+                return m_name;
             }
         }
 
-        public int NombreDeJours
+        public int NumberOfDays
         {
             get
             {
-                return m_nbJours;
+                return m_nbDays;
             }
         }
 
-        public string[] TabNomsJours
+        public string[] TabDayNames
         {
             get
             {
-                string[] tabNomJours = new string[NombreDeJours];
+                string[] tabDayNames = new string[NumberOfDays];
                 int count = 0;
-                for (int jour = 0; jour < 5; jour++)
+                for (int day = 0; day < 5; day++)
                 {
-                    if (m_tabBoolJours[jour])
+                    if (m_tabBoolDays[day])
                     {
-                        tabNomJours[count] = m_tabListeDeJours[jour];
+                        tabDayNames[count] = m_tabDayNames[day];
                         count++;
                     }
                 }
-                return tabNomJours;
+                return tabDayNames;
             }
         }
 
-        #endregion
-
-        #region constructeur
-
-        public Cours(string pNom, bool[] pTabDeJours)
+        public Course(string pName, bool[] pTabDays)
         {
-            m_nomCours = pNom;
-            m_tabBoolJours = pTabDeJours;
-            CalculNombreJours();
+            m_name = pName;
+            m_tabBoolDays = pTabDays;
+            CountNumberOfDays();
         }
 
-        #endregion
-
-        #region
-
-        private void CalculNombreJours()
+        private void CountNumberOfDays()
         {
-            m_nbJours = 0;
-            foreach (bool item in m_tabBoolJours)
+            m_nbDays = 0;
+            foreach (bool item in m_tabBoolDays)
             {
                 if (item)
-                    m_nbJours++;
+                    m_nbDays++;
             }
         }
 
-        #endregion
     }
 }
