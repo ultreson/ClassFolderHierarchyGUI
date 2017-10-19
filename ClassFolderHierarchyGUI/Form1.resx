@@ -117,4 +117,408 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;clbJours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSession.Name" xml:space="preserve">
+    <value>lblSession</value>
+  </data>
+  <data name="&gt;&gt;txtNomCours.Parent" xml:space="preserve">
+    <value>grpSessionActive</value>
+  </data>
+  <data name="&gt;&gt;lblNom.Parent" xml:space="preserve">
+    <value>grpSessionActive</value>
+  </data>
+  <data name="&gt;&gt;lsvSession.Parent" xml:space="preserve">
+    <value>grpSessionActive</value>
+  </data>
+  <data name="&gt;&gt;txtNomCours.Name" xml:space="preserve">
+    <value>txtNomCours</value>
+  </data>
+  <data name="&gt;&gt;txtCount.Parent" xml:space="preserve">
+    <value>grpSessionActive</value>
+  </data>
+  <data name="&gt;&gt;btnVider.Parent" xml:space="preserve">
+    <value>grpSessionActive</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnVider.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 189</value>
+  </data>
+  <data name="jours.Text" xml:space="preserve">
+    <value>jours</value>
+  </data>
+  <data name="&gt;&gt;btnCreer.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnCreer.Parent" xml:space="preserve">
+    <value>grpSessionActive</value>
+  </data>
+  <data name="lblSession.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="txtSession.Size" type="System.Drawing.Size, System.Drawing">
+    <value>443, 20</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmGraphique</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblNom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblJoursCours.Parent" xml:space="preserve">
+    <value>grpSessionActive</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNomCours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="grpSessionActive.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;clbJours.Parent" xml:space="preserve">
+    <value>grpSessionActive</value>
+  </data>
+  <data name="&gt;&gt;lblNom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnVider.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="clbJours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 94</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter.Parent" xml:space="preserve">
+    <value>grpSessionActive</value>
+  </data>
+  <data name="grpSessionActive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 71</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="lsvSession.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 211</value>
+  </data>
+  <data name="&gt;&gt;cours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtSession.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="clbJours.Items1" xml:space="preserve">
+    <value>mardi</value>
+  </data>
+  <data name="grpSessionActive.Text" xml:space="preserve">
+    <value>Session active</value>
+  </data>
+  <data name="lblSession.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="clbJours.Items4" xml:space="preserve">
+    <value>vendredi</value>
+  </data>
+  <data name="txtCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 163</value>
+  </data>
+  <data name="cours.Width" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="&gt;&gt;course.Name" xml:space="preserve">
+    <value>course</value>
+  </data>
+  <data name="btnVider.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 41</value>
+  </data>
+  <data name="&gt;&gt;txtCount.Name" xml:space="preserve">
+    <value>txtCount</value>
+  </data>
+  <data name="cours.Text" xml:space="preserve">
+    <value>cours</value>
+  </data>
+  <data name="&gt;&gt;txtCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="txtCount.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="txtNomCours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 20</value>
+  </data>
+  <data name="clbJours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>191, 45</value>
+  </data>
+  <data name="&gt;&gt;txtSession.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnCreer.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btnEffacer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnEffacer.Parent" xml:space="preserve">
+    <value>grpSessionActive</value>
+  </data>
+  <data name="btnCreer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 41</value>
+  </data>
+  <data name="txtNomCours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 65</value>
+  </data>
+  <data name="clbJours.Items" xml:space="preserve">
+    <value>lundi</value>
+  </data>
+  <data name="txtSession.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 9</value>
+  </data>
+  <data name="&gt;&gt;txtSession.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="clbJours.Items3" xml:space="preserve">
+    <value>jeudi</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblSession.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="&gt;&gt;lsvSession.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNomCours.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtCount.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnSession.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 42</value>
+  </data>
+  <data name="&gt;&gt;grpSessionActive.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtSession.Name" xml:space="preserve">
+    <value>txtSession</value>
+  </data>
+  <data name="&gt;&gt;btnVider.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtSession.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;clbJours.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblJoursCours.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblJoursCours.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnAjouter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 32</value>
+  </data>
+  <data name="&gt;&gt;btnCreer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnSession.Text" xml:space="preserve">
+    <value>Commencer session</value>
+  </data>
+  <data name="lsvSession.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lblNom.Text" xml:space="preserve">
+    <value>Nom du cours:</value>
+  </data>
+  <data name="btnAjouter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 107</value>
+  </data>
+  <data name="&gt;&gt;btnCreer.Name" xml:space="preserve">
+    <value>btnCreer</value>
+  </data>
+  <data name="txtNomCours.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;lsvSession.Name" xml:space="preserve">
+    <value>lsvSession</value>
+  </data>
+  <data name="&gt;&gt;lblSession.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnEffacer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 37</value>
+  </data>
+  <data name="&gt;&gt;clbJours.Name" xml:space="preserve">
+    <value>clbJours</value>
+  </data>
+  <data name="&gt;&gt;btnSession.Name" xml:space="preserve">
+    <value>btnSession</value>
+  </data>
+  <data name="&gt;&gt;btnSession.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblJoursCours.Name" xml:space="preserve">
+    <value>lblJoursCours</value>
+  </data>
+  <data name="btnAjouter.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="lblJoursCours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 16</value>
+  </data>
+  <data name="lsvSession.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 16</value>
+  </data>
+  <data name="&gt;&gt;course.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblSession.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnSession.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnEffacer.Name" xml:space="preserve">
+    <value>btnEffacer</value>
+  </data>
+  <data name="&gt;&gt;grpSessionActive.Name" xml:space="preserve">
+    <value>grpSessionActive</value>
+  </data>
+  <data name="btnSession.Size" type="System.Drawing.Size, System.Drawing">
+    <value>542, 23</value>
+  </data>
+  <data name="lblNom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="&gt;&gt;grpSessionActive.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnCreer.Text" xml:space="preserve">
+    <value>Créer</value>
+  </data>
+  <data name="grpSessionActive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 236</value>
+  </data>
+  <data name="&gt;&gt;lblNom.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnVider.Name" xml:space="preserve">
+    <value>btnVider</value>
+  </data>
+  <data name="btnEffacer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 146</value>
+  </data>
+  <data name="&gt;&gt;lblSession.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;jours.Name" xml:space="preserve">
+    <value>jours</value>
+  </data>
+  <data name="&gt;&gt;grpSessionActive.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;days.Name" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="&gt;&gt;lblNom.Name" xml:space="preserve">
+    <value>lblNom</value>
+  </data>
+  <data name="btnEffacer.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;lblSession.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnAjouter.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btnSession.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnSession.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter.Name" xml:space="preserve">
+    <value>btnAjouter</value>
+  </data>
+  <data name="&gt;&gt;lblJoursCours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblSession.Text" xml:space="preserve">
+    <value>Nom de la session:</value>
+  </data>
+  <data name="btnEffacer.Text" xml:space="preserve">
+    <value>Effacer</value>
+  </data>
+  <data name="&gt;&gt;days.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Session.cs</value>
+  </data>
+  <data name="lblNom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 35</value>
+  </data>
+  <data name="&gt;&gt;cours.Name" xml:space="preserve">
+    <value>cours</value>
+  </data>
+  <data name="&gt;&gt;lsvSession.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>569, 319</value>
+  </data>
+  <data name="&gt;&gt;btnEffacer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnVider.Text" xml:space="preserve">
+    <value>Vider</value>
+  </data>
+  <data name="lblJoursCours.Text" xml:space="preserve">
+    <value>Jours du cours</value>
+  </data>
+  <data name="btnCreer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 189</value>
+  </data>
+  <data name="clbJours.Items2" xml:space="preserve">
+    <value>mercredi</value>
+  </data>
+  <data name="clbJours.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;jours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblJoursCours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="lblNom.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btnVider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jours.Width" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="&gt;&gt;lblJoursCours.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
