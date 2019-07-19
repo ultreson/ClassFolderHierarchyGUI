@@ -9,26 +9,19 @@ namespace ClassFolderHierarchyGUI
 {
     public class Course
     {
-
-        private string[] m_tabDayNames = new string[] {"lundi", "mardi", "mercredi","jeudi", "vendredi"};
+        private string[] m_tabDayNames = {"lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"};
         private string m_name;
         private int m_nbDays;
         private bool[] m_tabBoolDays;
 
         public string Name
         {
-            get
-            {
-                return m_name;
-            }
+            get { return m_name; }
         }
 
         public int NumberOfDays
         {
-            get
-            {
-                return m_nbDays;
-            }
+            get { return m_nbDays; }
         }
 
         public string[] TabDayNames
@@ -37,7 +30,7 @@ namespace ClassFolderHierarchyGUI
             {
                 string[] tabDayNames = new string[NumberOfDays];
                 int count = 0;
-                for (int day = 0; day < 5; day++)
+                for (int day = 0; day < m_tabDayNames.Length; day++)
                 {
                     if (m_tabBoolDays[day])
                     {
@@ -45,6 +38,7 @@ namespace ClassFolderHierarchyGUI
                         count++;
                     }
                 }
+
                 return tabDayNames;
             }
         }
@@ -65,6 +59,5 @@ namespace ClassFolderHierarchyGUI
                     m_nbDays++;
             }
         }
-
     }
 }

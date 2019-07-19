@@ -14,18 +14,12 @@ namespace ClassFolderHierarchyGUI
 
         public string Name
         {
-            get
-            {
-                return m_name;
-            }
+            get { return m_name; }
         }
 
         public List<Course> List
         {
-            get
-            {
-                return m_courseList;
-            }
+            get { return m_courseList; }
         }
 
         public Semester(string pName)
