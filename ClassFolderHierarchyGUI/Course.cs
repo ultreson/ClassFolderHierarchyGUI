@@ -10,7 +10,7 @@ namespace ClassFolderHierarchyGUI
     public class Course
     {
 
-        private string[] m_tabDayNames = new string[] {"lundi", "mardi", "mercredi","jeudi", "vendredi"};
+        private string[] m_tabDayNames = new string[] {"dimanche", "lundi", "mardi", "mercredi","jeudi", "vendredi"};
         private string m_name;
         private int m_nbDays;
         private bool[] m_tabBoolDays;
